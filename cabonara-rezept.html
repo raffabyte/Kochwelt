@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama's Cabonara</title>
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="cabonara-rezept.css">
+    <script src="cabonara-rezept.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+        <a href="index.html">
+            <img class="logo-groß" src="img/logo.png" alt="">
+            <img class="logo-klein" src="img/logo_small.png" alt="">
+        </a>
+        <button onclick="toggleRespMenu()">Menü</button>
+        
+        <nav>
+            <a href="./index.html">
+                Start <div class="a-underline"></div>
+            </a>
+            <a href="cabonara-rezept.html">
+                Rezept des Tages <div class="a-underline"></div>
+            </a>
+            <a href="kontakt.html">
+                Kontakt <div class="a-underline"></div>
+            </a>
+            <a href="./impressum.html">
+                Impressum <div class="a-underline"></div>
+            </a>
+        </nav>
+    </div>
+    </header>
+    <div id="resp-menu" class="open-menu-box close-menu-box">
+        <a href="index.html">Start</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="cabonara-rezept.html">Rezept des Tages</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="kontakt.html">Kontakt</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="impressum.html">Impressum</a>
+    </div>
+    <div class="aot">
+        <h1>Mama's Cabonara</h1>
+        <img class="aot-img" src="./img/carbonara.jpg" alt="">
+        <div class="aot-information">
+            <div class="aot-information2">
+                <img class="info-img" src="./img/clock-regular.svg" alt=""><p>15 min</p>
+            </div>
+            <div class="aot-information2">
+                <img class="info-img" src="./img/brain-solid.svg" alt=""><p>simpel</p>
+            </div>
+            <div class="aot-information2">
+                <img class="info-img" src="./img/calendar-alt-regular.svg" alt=""><p>08.06.2025</p>
+            </div>
+        </div>
+    </div>
+    <div class="separator">
+        <div class="separator2"></div>
+    </div>
+    <div class="section-2">
+        <div class="portions">
+            <label for="input"><p>Zutaten für</p></label>
+            <input id="input" min="1" max="6" type="number" value="4" required>
+            <button id="button" onclick="submit()">Portionen</button>
+        </div>
+        <p id="zutat1" class="text-gray">500g Spaghetti</p>
+        <p id="zutat2" class="text-white">300g Speck</p>
+        <p id="zutat3" class="text-gray">4 Eier</p>
+        <p id="zutat4" class="text-white">400ml Sahne</p>
+        <p id="zutat5" class="text-gray">160g Parmesan</p>
+        <p class="text-white">Salz, Pfeffer, Muskat</p>
+    </div>
+    <div class="how-to-cook">
+        <h2>Zubereitung</h2>
+        <div class="how-to-cook-info">
+            <div class="aot-information2">
+                <img class="info-img" src="./img/clock-regular.svg" alt=""><p>15 min</p>
+            </div>
+            <div class="aot-information2">
+                <img class="info-img" src="./img/clock-regular.svg" alt=""><p>simpel</p>
+            </div>
+        </div>
+        <p>Koche die Spaghetti in gesalzenem Wasser al dente. 
+            Währenddessen schneide den Speck in Würfel und brate ihn knusprig an. 
+            In einer Schüssel verquirlst du die Eier, mischst die Sahne (oder Milch) und rührst den geriebenen Parmesan ein. 
+            Würze mit Salz, Pfeffer und Muskatnuss. Wenn die Spaghetti fertig sind, gib sie zum Speck in die Pfanne. 
+            Nimm die Pfanne vom Herd und gieße die Ei-Sahne-Mischung darüber. Rühre schnell, damit die Sauce cremig wird. 
+            Schmecke ab und serviere sofort, gerne mit extra Parmesan und Pfeffer.
+            </p>
+    </div>
+    <div class="made-by">
+        <h3>Rezept erstellt von</h3>
+        <div class="profil">
+            <img src="./img/profile.png" alt="">
+            <p>Raffael</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-elements">
+            <div>
+                <a href="index.html">
+                    <img class="logo-footer" src="img/logo.png" alt="">
+                    <img class="invert" src="img/logo_small.png" alt="">
+                </a>
+            </div>
+            <div class="socials">
+                <a class="a1000px" href="https://facebook.com" target="_blank">
+                    <img src="img/fb_logo.png" alt="">
+                    <img class="media1000px" src="img/facebook_logo.png" alt="">
+                </a>
+                <a class="a1000px" href="https://instagram.com" target="_blank">
+                    <img src="img/ig_logo.png" alt="">
+                    <img class="media1000px" src="img/instagrram_logo.png" alt="">
+                </a>
+                <a class="a1000px" href="https://twitter.com" target="_blank">
+                    <img src="img/tw_logo.png" alt="">
+                    <img class="media1000px" src="img/x_logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,452 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    font-size: 16px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    max-width: 1440px;
+    padding: 0 64px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+header img {
+    height: 80px;
+}
+.logo-klein {
+    display: none;
+}
+button {
+    display: none;
+    padding: 10px 60px;
+    color: white;
+    background-color: #008000;
+    font-weight: 500;
+    text-align: center;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+}
+button:hover {
+    cursor: pointer;
+    border: solid 2px #403b3b;
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 25px;
+}
+a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.a-underline {
+    height: 3px;
+    width: 100%;
+    background-color: none;
+}
+a:hover {
+    cursor: pointer;
+    color: #008000;
+}
+a:hover .a-underline {
+    background-color: #008000;
+}
+.open-menu-box {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    transition: all 250ms ease-in-out;
+}
+.resp-separator {
+    display: flex;
+    height: 3px;
+    background-color: #403b3b;
+}
+.close-menu-box {
+    transform: translateX(100%);
+    display: none !important;
+}
+.aot {
+    width: 100%;
+    max-width: 1440px;
+    padding: 32px 64px;
+    box-sizing: border-box;
+}
+.aot h1 {
+    font-weight: 600;
+}
+.aot-img {
+    width: 100%;
+    aspect-ratio: 1/0.3;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.aot-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 28px 0;
+}
+.aot-information2 {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    background-color: rgb(239,239,239);
+    border-radius: 5px;
+    gap: 8px;
+    padding: 1px 16px;
+}
+.info-img {
+    width: 14px;
+}
+p {
+    font-size: 16px;
+}
+.separator {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 64px;
+    box-sizing: border-box;
+}
+.separator2 {
+    height: 100%;
+    background-color: rgb(239,239,239);
+    height: 1px;
+}
+.section-2 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 64px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.portions {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    flex-wrap: wrap;
+}
+.portions input {
+    padding-left: 16px;
+    margin-left: 16px;
+    height: 38px;
+    border: solid 2px rgb(239,239,239);
+    border-radius: 16px 0 0 16px;
+    width: 128px;
+}
+#button {
+    display: block !important;
+    padding: 0 !important;
+    background-color: #008000;
+    border: none;
+    color: white;
+    height: 44px;
+    width: 160px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 0;
+    margin: 0;
+}
+#button:hover {
+    border: solid 0 !important;
+}
+#zutat1, #zutat2, #zutat3, #zutat4, #zutat5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px; 
+}
+.text-gray {
+    margin: 0;
+    padding: 16px 64px;
+    background-color: rgb(239,239,239);
+    border-radius: 16px;
+}
+.text-white {
+    margin: 0;
+    padding: 16px 64px;
+    border-radius: 16px;
+}
+.how-to-cook {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 64px;
+    box-sizing: border-box;
+}
+.how-to-cook h2 {
+    font-weight: 600;
+}
+.how-to-cook-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.how-to-cook p {
+    padding: 16px 0;
+}
+.made-by {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 64px;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+}
+.made-by h3 {
+    font-weight: 600;
+}
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.profil img {
+    width: 100px;
+    border-radius: 100px;
+}
+.profil p {
+    font-size: 26px;
+}
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    align-items: center;
+    background-color: #403b3b;
+    justify-content: center;
+    margin-top: auto;
+}
+.footer-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 64px;
+    box-sizing: border-box;
+    gap: 48px;
+}
+.logo-footer {
+    width: 100%;
+    max-width: 260px;
+    filter: invert(100%);
+}
+.socials {
+    display: flex;
+    gap: 24px;
+    
+}
+.socials img {
+    border-radius: 16px;
+    max-width: 200px;
+    width: 100%;
+}
+.media1000px {
+    display: none;
+}
+.invert {
+    display: none;
+}
+
+
+@media(max-width: 1000px) {
+    .socials img {
+        display: none;
+    }
+    .media1000px {
+        display: block !important;
+        max-width: 60px !important;
+        width: 100% !important;
+    }
+    .a1000px {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media(max-width: 900px) {
+    nav {
+        display: none;
+    }
+    .open-menu-box {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 120px;
+        flex-direction: column;
+        background-color: #efefef;
+        padding: 16px;
+        gap: 16px;
+        border-bottom: 2px solid #403b3b; 
+        border-left: 2px solid #403b3b;
+        max-width: 260px;
+        width: 100%;
+    }
+    .open-menu-box a {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    button {
+        display: block;
+        padding: 10px 60px;
+        color: white;
+        background-color: #008000;
+        font-weight: 500;
+        text-align: center;
+        width: 200px;
+        border: none;
+        font-size: 18px;
+    }
+}
+@media(max-width: 700px) {
+    .header-elements {
+        padding: 0 32px;
+    }
+    .footer-elements {
+        padding: 0 32px;
+    }
+    .footer-elements img {
+        display: none;
+    }
+    .invert {
+        display: block !important;
+        max-width: 60px !important;
+        width: 100% !important;
+        filter: invert(100%);
+    }
+    .logo-groß {
+        display: none;
+    }
+    .logo-klein {
+        display: block;
+        height: 52px;
+    }
+    .aot {
+        width: 100%;
+        max-width: 1440px;
+        padding: 32px 32px;
+        box-sizing: border-box;
+    }
+    .section-2 {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+        display: flex
+    ;
+        flex-direction: column;
+    }
+    .how-to-cook {
+        display: flex
+    ;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+    .made-by {
+        display: flex
+    ;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 32px;
+        box-sizing: border-box;
+        padding-bottom: 80px;
+    }
+    .separator {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+}
+@media(max-width: 500px) {
+    .header-elements {
+        padding: 0 16px;
+        gap: 16px;
+    }
+    .footer-elements {
+        padding: 0 16px;
+        gap: 16px;
+    }
+    .socials {
+        gap: 16px;
+    }
+    button {
+        padding: 10px 10px;
+        max-width: 100px;
+    }
+    .portions input {
+        margin: 0;
+    }
+    .aot {
+        width: 100%;
+        max-width: 1440px;
+        padding: 32px 16px;
+        box-sizing: border-box;
+    }
+    .section-2 {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .how-to-cook {
+        display: flex
+    ;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    .made-by {
+        display: flex
+    ;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        padding-bottom: 80px;
+    }
+    .separator {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}

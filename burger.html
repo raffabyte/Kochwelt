@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bester Burger</title>
+    <link rel="icon" href="img/logo_small.png">
+    <link rel="stylesheet" href="./burger.css">
+    <script src="./burger.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-elements">
+        <a href="index.html">
+            <img class="logo-groß" src="img/logo.png" alt="">
+            <img class="logo-klein" src="img/logo_small.png" alt="">
+        </a>
+        <button onclick="toggleRespMenu()">Menü</button>
+        
+        <nav>
+            <a href="./index.html">
+                Start <div class="a-underline"></div>
+            </a>
+            <a href="cabonara-rezept.html">
+                Rezept des Tages <div class="a-underline"></div>
+            </a>
+            <a href="kontakt.html">
+                Kontakt <div class="a-underline"></div>
+            </a>
+            <a href="./impressum.html">
+                Impressum <div class="a-underline"></div>
+            </a>
+        </nav>
+    </div>
+    </header>
+    <div id="resp-menu" class="open-menu-box close-menu-box">
+        <a href="index.html">Start</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="cabonara-rezept.html">Rezept des Tages</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="kontakt.html">Kontakt</a>
+        <div class="resp-separator">
+
+        </div>
+        <a href="impressum.html">Impressum</a>
+    </div>
+
+    <section id="sec-main" class="main">
+        <div class="mainover">
+            <h1 class="ueber">Bester Cheeseburger der Welt</h1>
+            <img class="sec1-img" src="./img/cheeseburger.jpg" alt="cheeseburger">
+            <div class="info">
+                <div class="info-time">
+                   <image class="info-img" src="./img/clock-regular.svg"></image>
+                   <p class="info-text">15 Min</p>
+                </div>
+                <div class="info-time">
+                    <image class="info-img" src="./img/brain-solid.svg"></image>
+                    <p class="info-text">simpel</p>
+                </div>
+                <div class="info-time">
+                    <image class="info-img" src="./img/calendar-alt-regular.svg"></image>
+                    <p class="info-text">06.03.2025</p>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="sec-rezept" class="rezept">
+        <div class="rezeptover">
+            <div class="eingabe">
+                <p>Zutaten für</p>
+                <input class="input" type="number" id="portions" min="1" max="8" value="4">
+                <button class="button" onclick="myportions()">Portionen</button>
+            </div>
+            
+            <p class="text-gray" id="rezept001in01">400 g Faschiertes vom Rind</p>
+            <p class="text-white" id="rezept001in02">1 St. Dotter</p>
+            <p class="text-gray" id="rezept001in03">30 g Semmelbrösel</p>
+            <p class="text-white" id="rezept001in04">4 EL Öl</p>
+            <p class="text-gray" id="rezept001in05">4 St. Hamburger Brötchen</p>
+            <p class="text-white" id="rezept001in06">1 St. Paradeiser</p>
+            <p class="text-gray" id="rezept001in07">60 g Salatgurke</p>
+            <p class="text-white" id="rezept001in08">1 St. rote Zwiebel (kleine)</p>
+            <p class="text-gray" id="rezept001in09">3 EL Mayonnaise</p>
+            <p class="text-white" id="rezept001in10">1 EL Senf</p>
+            <p class="text-gray" id="rezept001in11">4 Scheibe(n) Cheddar (ca.2 mm dick)</p>
+            <p class="text-white" id="rezept001in12">4 St. Salatblätter</p>
+            <p class="text-gray" id="rezept001in13">Salz</p>
+            <p class="text-white" id="rezept001in14">Pfeffer</p>
+        </div>
+
+    </section>
+
+    <section id="sec-zubereitung" class="zubereitung">
+        <div class="zubereitungover">
+            <h2 class="ueber2">Zubereitung</h2>
+            <div class="info2">
+                <div class="info-time">
+                   <image class="info-img" src="./img/clock-regular.svg"></image>
+                   <p class="info-text">15 Minuten</p>
+                </div>
+                <div class="info-time">
+                    <image class="info-img" src="./img/clock-regular.svg"></image>
+                    <p class="info-text">Gesamtzeit ca 30 Minuten</p>
+                 </div>
+            </div>
+           <p>Paradeiser und Gurke in ca. 0,5 cm dicke Scheiben schneiden. Zwiebel schälen und in feine Ringe schneiden. Mayonnaise mit Senf verrühren. Für den Burger Faschiertes mit Dotter und Bröseln verkneten, salzen, pfeffern und daraus 4 flache Laibchen formen. Laibchen in Öl beidseitig braten, mit Käsescheiben belegen und noch kurz braten. Buns durchschneiden und die Unterseiten mit Sauce bestreichen. Mit Salatblättern, Laibchen, Zwiebelringen sowie Paradeiser- und Gurkenscheiben belegen. Deckel daraufsetzen und behutsam andrücken. Dazu passen Pommes frites, Ketchup und Mayonnaise.</p>
+           <h3 class="ueber3">Rezept erstellt von</h3>
+            <div class="profile">
+                <img class="profile2" src="./img/profile.png">
+                <p class="profile-text">Ryan</p>
+
+            </div>
+        </div>
+   </section>
+   <footer>
+    <div class="footer-elements">
+        <div>
+            <a href="index.html">
+                <img class="logo-footer" src="img/logo.png" alt="">
+                <img class="invert" src="img/logo_small.png" alt="">
+            </a>
+        </div>
+        <div class="socials">
+            <a class="a1000px" href="https://facebook.com" target="_blank">
+                <img src="img/fb_logo.png" alt="">
+                <img class="media1000px" src="img/facebook_logo.png" alt="">
+            </a>
+            <a class="a1000px" href="https://instagram.com" target="_blank">
+                <img src="img/ig_logo.png" alt="">
+                <img class="media1000px" src="img/instagrram_logo.png" alt="">
+            </a>
+            <a class="a1000px" href="https://twitter.com" target="_blank">
+                <img src="img/tw_logo.png" alt="">
+                <img class="media1000px" src="img/x_logo.png" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
